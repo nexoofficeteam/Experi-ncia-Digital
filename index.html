@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ============================================================
+       NEXO — METADADOS / SEO
+       Título e descrição do site: altere aqui se necessário.
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NEXO — Agência de tecnologia e design digital</title>
+  <meta name="description" content="A NEXO cria sites, sistemas e experiências digitais para empresas que querem ser levadas a sério. Veja os projetos e fale com a gente.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXO — Agência de tecnologia e design digital">
+  <meta property="og:description" content="Sites, sistemas e experiências digitais para empresas que querem ser levadas a sério.">
+  <meta property="og:image" content="assets/marca/nexo-og.jpg"> <!-- TODO: adicionar imagem de compartilhamento 1200x630 -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/marca/favicon.ico"> <!-- TODO: adicionar favicon real -->
+  <link rel="canonical" href="https://nexo.com.br"> <!-- TODO: ajustar para o domínio real -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NEXO — HEADER
+       ============================================================ -->
+  <header class="header">
+    <div class="container header-inner">
+      <span class="logo" data-nexo="marca">NEXO</span>
+      <a class="header-whatsapp" data-nexo="whatsapp-link" target="_blank" rel="noopener" aria-label="Falar com a NEXO no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.19-1.17-1.56-1.17-2.98 0-1.42.75-2.11 1.01-2.4.27-.29.58-.36.78-.36.19 0 .39 0 .55.01.18.01.42-.07.65.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.44.29.15.46.13.63-.08.17-.21.72-.84.92-1.13.19-.29.39-.24.65-.14.27.1 1.68.79 1.97.93.29.15.48.22.55.34.07.13.07.72-.17 1.4Z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         NEXO — HERO
+         Headline e subtexto vêm de js/config.js (textos.heroHeadline
+         / textos.heroSubtexto).
+         ============================================================ -->
+    <section class="hero">
+      <svg class="hero-rede" data-nexo="hero-rede" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+
+      <div class="container hero-conteudo">
+        <p class="hero-marca"><span class="hero-marca-nexo">NEXO</span><span class="hero-marca-extra" data-nexo="marca-extra"></span></p>
+        <h1 class="hero-headline" data-nexo="hero-headline">Cada negócio é um ponto. Nós criamos a conexão.</h1>
+        <p class="hero-subtexto" data-nexo="hero-subtexto">Somos uma agência de tecnologia. Criamos sites, sistemas e experiências digitais para empresas que querem ser levadas a sério.</p>
+
+        <div class="btn-grupo hero-cta">
+          <a class="btn btn-primario" href="#projetos" data-nexo="cta-projetos">Ver projetos</a>
+          <a class="btn btn-secundario" data-nexo="whatsapp-link" target="_blank" rel="noopener">Falar com a NEXO</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NEXO — PORTFÓLIO
+         Os cards são gerados por js/main.js a partir da lista
+         NEXO_CONFIG.projetos em js/config.js. Para adicionar, editar
+         ou remover projetos, mexa apenas em js/config.js.
+         ============================================================ -->
+    <section class="portfolio" id="projetos">
+      <div class="container">
+        <header class="portfolio-cabecalho">
+          <span class="eyebrow" data-nexo="portfolio-eyebrow">Portfólio</span>
+          <h2 class="portfolio-titulo" data-nexo="portfolio-titulo">Projetos selecionados.</h2>
+        </header>
+
+        <div class="grade-projetos" data-nexo="grade-projetos"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NEXO — POSICIONAMENTO
+         ============================================================ -->
+    <section class="posicionamento">
+      <div class="container">
+        <p class="posicionamento-texto" data-nexo="posicionamento">Não criamos apenas sites. Criamos experiências digitais para empresas que querem ser levadas a sério.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NEXO — CTA WHATSAPP (final)
+         ============================================================ -->
+    <section class="cta-final">
+      <div class="container">
+        <h2 class="cta-final-titulo" data-nexo="cta-final-titulo">Seu próximo projeto pode começar aqui.</h2>
+        <p class="cta-final-subtexto" data-nexo="cta-final-subtexto">Conte pra gente o que você precisa. A conversa começa no WhatsApp.</p>
+
+        <div class="grade-equipe" data-nexo="grade-equipe"></div>
+
+        <a class="btn btn-primario cta-final-fallback" data-nexo="whatsapp-link" target="_blank" rel="noopener" hidden><span data-nexo="cta-final-botao">Falar com a NEXO</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       NEXO — FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-marca" data-nexo="marca">NEXO</span>
+      <ul class="footer-links">
+        <li><a data-nexo="instagram-link" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a data-nexo="whatsapp-link" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+      <p class="footer-copy">© <span data-nexo="ano">2026</span> NEXO. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
